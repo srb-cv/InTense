@@ -1,0 +1,9 @@
+!!python/object/apply:collections.OrderedDict
+- - - data_type
+    - sarcasm
+  - - max_seq_len
+    - 50
+  - - max_pad
+    - true
+  - - batch_size
+    - 8

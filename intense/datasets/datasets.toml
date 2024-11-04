@@ -1,0 +1,65 @@
+[mosi]
+data_path = "data/mosi_senti_data.pkl"
+input_dims =  [20, 5, 300]
+modalities =  ["video", "audio", "text"]
+train_task = "regression"
+test_task = "posneg-classification"
+
+[mosei_senti]
+data_path =  "data/mosei_senti_data.pkl"
+input_dims =  [35, 74, 300]
+modalities =  ["video", "audio", "text"]
+train_task = "regression"
+test_task = "posneg-classification"
+
+[mosei_raw]
+data_path =  "data/mosei/mosei_raw.pkl"
+input_dims =  [713, 74, 300]
+modalities =  ["video", "audio", "text"]
+train_task = "regression"
+test_task = "posneg-classification"
+
+[sarcasm]
+data_path = "data/sarcasm.pkl"
+input_dims = [371, 81, 300]
+modalities = ["video", "audio", "text"]
+num_classes = 2
+train_task = "classification"
+test_task = "classification"
+
+[humor]
+data_path = "data/humor.pkl"
+input_dims = [371, 81, 300]
+modalities = ["video", "audio", "text"]
+num_classes = 2
+train_task = "classification"
+test_task = "classification"
+
+[synthgene]
+data_path = "data/synthetic_data/syth_gene.csv"
+num_classes = 2
+train_task = "classification"
+test_task = "classification"
+
+[synthgene_xor]
+data_path = "data/synth_gene/data_xor_c2_m3_v1/xor_data.csv"
+num_classes = 2
+train_task = "classification"
+test_task = "classification"
+modalities = ["1", "2", "3"]
+
+[avmnist]
+data_path = "data/avmnist"
+num_classes = 10
+modalities = ["image", "audio"]
+train_task = "classification"
+test_task = "classification"
+input_channels = [1, 1]
+
+[enrico]
+data_path = "data/enrico"
+num_classes = 20
+modalities = ["image", "wireframes"]
+train_task = "classification"
+test_task = "classification"
+input_channels = [3, 3]

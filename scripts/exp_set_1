@@ -1,0 +1,1 @@
+setgpu 5 && python intensfusion/training_modules/train_mkl.py --scheduler-gamma 0.9 --epochs 100 --is-packed --experiment-name "mkl_mosi"

@@ -1,1 +1,1 @@
-Please see the Technical Appedix to our submission.
+Please see the Technical Appedix G to our [submission](https://arxiv.org/pdf/2405.04671) .

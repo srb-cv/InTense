@@ -97,7 +97,7 @@ class MKLFusion(nn.Module):
             return dict(zip(self.in_features.keys(), scores))
 
     def weight_norms(self):
-        return torch.tensor(
+        return torch.stack(
             [torch.linalg.matrix_norm(tens) for tens in self.weight]
         )
 
